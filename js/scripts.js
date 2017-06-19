@@ -1,14 +1,20 @@
-$(document).ready(function(){
-  $("form#acts").submit(function(event){
-    event.preventDefault();
-    $("input:checkbox[name=acts]:checked").each(function(){
-      var acts = $(this).val();
-    });
-$(document).ready(function(){
-  $("form#gifts").submit(function(event){
-    event.preventDefault();
-    $("input:checkbox[name=gifts]:checked").each(function(){
-      var gifts = $(this).val();
-    });
-    var inputtedCans = $("input#can").val();
-    var inputtedGoodwill = $("input#goodwill").val();
+
+$(document).ready(function() {
+
+  $("#fransatan").click(function(){
+    $("#satan").toggle();
+    $("#francis").toggle();
+  })
+
+  $("#start").submit(function(event) {
+    event.preventDefault()
+    var name = $("#name").val();
+    var description = $("#goodDeed").val();
+    var goodness = $("#howGood").val();
+    var greeting = "Welcome, " + name + "!" + " it's time to find out if you're a good person.";
+    $("#nameResponse").prepend(greeting)
+    $("#start").fadeOut();
+    $("#quiz-start").fadeIn();
+
+  });
+});

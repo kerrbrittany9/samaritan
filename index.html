@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Good Samaritan</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Are you a Good Person?</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well" id="fransatan">
+            <!-- placeholder avatar here-->
+            <img src="img/francis.jpg" alt="St. Francis as Snow White" id="francis">
+            <img src="img/satan.png" alt="Satan playing sick licks" id="satan">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="well">
+            <h2>So you think you're a saint...</h2>
+            <h5>Here's where you can find out just how good a person you really are. Think MLK was an amateur? Think you could beat Gandhi in a nice-battle? Take our survey and find out where you fall on the good/evil scale.</h5>
+          </div>
+          <div class="well" id="questions">
+            <form id="start">
+              <div class="nameStuff">
+                <label for="name">Enter your Name</label>
+                <input id="name" type="text" name="name1" placeholder="Your Name Here">
+              </div>
+              <div class="goodness">
+                <label for="goodDeedField">Tell us about the best thing you have ever done for someone else.</label><br>
+                <textarea id="goodDeed" placeholder="Write good deed here..."></textarea>
+              </div>
+              <div class="GoodScale">
+                <label for="howGood">On a scale of 1-10, how good a person do you consider yourself to be?</label>
+                <input id="howGood" type="text" name="" placeholder="1-10">
+              </div>
+              <button type="submit" class="button">Submit</button>
+            </form>
+            <span id="nameResponse"></span>
+            <h3 id="quiz-start"><a href="page2.html">Click here to begin the quiz</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well">
+            <img class="pics" src="img/umbrella.jpg" alt="Man holding an umbrella">
+            <img class="pics" src="img/gooddeeds.jpg" alt="Calla thinks this star  is from Texas">
+            <img class="pics" src="img/ginger.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
