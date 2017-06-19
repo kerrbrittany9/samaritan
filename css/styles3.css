@@ -1,0 +1,15 @@
+body{
+  background-image: url(../img/cork.jpg);
+  background-size: 40%;
+  }
+
+
+.jumbotron {
+text-align: center;
+background: linear-gradient( rgba(0, 0, 0, .30), rgba(0, 0, 0, .30) ), url("../img/jumboback.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: white;
+text-shadow: 2px 2px 2px;
+}
