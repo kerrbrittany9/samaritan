@@ -13,3 +13,22 @@ background-position: center;
 color: white;
 text-shadow: 2px 2px 2px;
 }
+
+#diana {
+  width: 65%;
+  display:block;
+  margin: auto;
+}
+
+#heading {
+  font-size: 32px;
+}
+
+.checks {
+  font-size:24px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+}
