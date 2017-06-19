@@ -1,0 +1,54 @@
+
+body{
+  background-image: url(../img/cork.jpg);
+  background-size: 40%;
+  }
+
+  .jumbotron {
+  text-align: center;
+  background: linear-gradient( rgba(0, 0, 0, .30), rgba(0, 0, 0, .30) ), url("../img/jumboback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 2px;
+}
+#satan{
+  display: none;
+  width: 300px;
+  height: 400px;
+}
+#francis{
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+}
+
+#goodDeedField {
+  height: 200px;
+  width: 350px;
+}
+
+.button{
+  display: block;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.pics {
+  height: 300px;
+  width: 300px;
+  margin-left: 50px;
+}
+
+#nameResponse{
+  padding-left: 20%;
+}
+
+#quiz-start {
+  display: none;
+  color: blue;
+  text-align: center;
+}
