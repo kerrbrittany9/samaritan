@@ -24,9 +24,9 @@ Sign into GitHub and copy URL. In local terminal, type command "git clone [paste
 * User submits all forms and receives a grand total.
   * Input: User fills out form and clicks submit.
   * Output: '65 points' appears on screen.
-* User's final score is categorized into a celebrity match.
-  * Input: User's final score is 65 points.
-  * Output: Angelina Jolie appears on screen.
+* User's final score is categorized into a celebrity match based on form where their score is the highest.
+  * Input: User scores 6 on form one, 3 on form 2, 4 on form 3 and 1 on form 4.
+  * Output: Jamie Foxx appears on screen.
 * User's selections throughout survey determine suggestion for future area of focus.
   * Input: User scores high on conservation.
   * Output: Program recommends local parks and rec volunteer organization.
