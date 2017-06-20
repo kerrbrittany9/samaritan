@@ -15,9 +15,11 @@ text-shadow: 2px 2px 2px;
 }
 
 #diana {
-  width: 65%;
+  width: 70%;
   display:block;
   margin: auto;
+  border: double 5px;
+  border-radius: 20%;
 }
 
 #heading {
@@ -31,4 +33,17 @@ text-shadow: 2px 2px 2px;
 #submit {
   display: block;
   margin: auto;
+}
+
+.tack {
+  width: 5%;
+  height: 5%;
+}
+
+#tack2 {
+  float:right;
+}
+
+#tack3 {
+  float:right;
 }
