@@ -25,14 +25,32 @@
             <div class="row">
               <div class="col-md-6">
                  <h3>Over the past year....</h3>
-                 <div class="form-group">
-                   <label for="cans">How many cans of food have you donated?</label>
-                   <input type="number" class="form-control" id="can">
-                 </div><br>
-                 <div class="form-group">
-                   <label for="goodwill">How many times did you drop off items at Goodwill or the like?</label>
-                   <input type="number" class="form-control" id="goodwill">
-                 </div><br>
+                 <div class="radio" class="form-group">
+                   <label>
+                     <h4>Have you donated food items to individuals in need?</h4>
+                     <input type="radio" name="can" value="yes" checked>
+                     yes
+                   </label>
+                 </div>
+                 <div class="radio">
+                   <label>
+                     <input type="radio" name="can" value=>
+                     no
+                   </label>
+                 </div>
+                 <div class="radio" class="form-group">
+                   <label>
+                     <h4>Have you donated clothing, household items, furniture or the like?</h4>
+                     <input type="radio" name="items" value="yes" checked>
+                     yes
+                   </label>
+                 </div>
+                 <div class="radio">
+                   <label>
+                     <input type="radio" name="items" value=>
+                     no
+                   </label>
+                 </div>
                  <div class="checkers">
                    <h4>Check any that apply for the last year:</h4>
                    <input type="checkbox" name="gifts" value="1"> I donated books.<br>

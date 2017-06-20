@@ -86,8 +86,8 @@ $(document).ready(function() {
       var gift = $(this).val();
       gifts.push(gift);
     });
-    var inputtedCans = $("input#can").val();
-    var inputtedGoodwill = $("input#goodwill").val();
+    var inputtedCans = $("input:radio[name=cans]:checked").val();
+    var inputtedGoodwill = $("input:radio[name=items]:checked").val();
   });
 
   // page5
