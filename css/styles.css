@@ -1,4 +1,4 @@
-
+/*all iterations*/
 body{
   background-image: url(../img/cork.jpg);
   background-size: 40%;
@@ -13,11 +13,7 @@ body{
   color: white;
   text-shadow: 2px 2px 2px;
 }
-#satan{
-  display: none;
-  width: 300px;
-  height: 400px;
-}
+/*Home Page*/
 #francis{
   display: block;
   margin: auto;
@@ -26,14 +22,15 @@ body{
   cursor: pointer;
 }
 
+#satan{
+  display: none;
+  width: 300px;
+  height: 400px;
+}
+
 #questions {
   text-align: center;
   height: 275px;
-}
-
-#goodDeedField {
-  height: 200px;
-  width: 350px;
 }
 
 .button{
@@ -48,8 +45,14 @@ body{
   margin-left: 50px;
 }
 
+#hidden {
+  display: none;
+  text-align: center;
+  height: 275px;
+  margin-top: 10%;
+}
+
 #nameResponse{
-  /*padding-left: 20%;*/
   font-size: 20px;
 }
 
@@ -57,10 +60,224 @@ body{
   color: blue;
   text-align: center;
 }
+/*End home page*/
 
-#hidden {
+/*All secondary pages*/
+/*.newPages {
   display: none;
+}*/
+
+/*start page 2*/
+
+#heading {
   text-align: center;
-  height: 275px;
-  margin-top: 10%;
+  margin-bottom: 5%;
 }
+
+.checks {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+#next {
+  margin-left: 40%;
+  margin-top: 7%;
+}
+
+.tack {
+  width: 5%;
+  height: 5%;
+}
+
+.tack2 {
+  float:right;
+}
+
+#lemonade {
+  width: 80%;
+  margin-bottom: 8%;
+}
+
+#tball {
+  width: 80%;
+  margin-top: 5%;
+}
+/*End page 2*/
+
+/*Start page 3*/
+
+#diana {
+  padding-top: 10%;
+  width: 70%;
+  height: 400px;
+  display: block;
+}
+
+#heading {
+  font-size: 32px;
+}
+
+.checks {
+  font-size:24px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+}
+
+/*end page 3*/
+
+/*start page 4*/
+
+#heart {
+  background: linear-gradient( rgba(0, 0, 0, .30), rgba(0, 0, 0, .30) ), url("../img/giverheart.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 500px;
+  height: 500px;
+  color: white;
+}
+
+#intro1 {
+  padding-top: 30%;
+}
+
+button{
+  display: block;
+  margin: auto;
+}
+#tree {
+  display: block;
+  width: 95%
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+.checkers {
+  font-size: 20px;
+}
+
+/*End page 4*/
+
+/*Start page 5*/
+
+#header {
+  background: linear-gradient( rgba(0, 0, 0, .30), rgba(0, 0, 0, .30) ), url("../img/quality.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 500px;
+  height: 500px;
+  color: white;
+}
+
+#intro2 {
+  margin-top: 34%;
+  text-align: center;
+}
+
+#harry {
+  width: 100%;
+  display:block;
+  margin: auto;
+}
+
+#instr {
+  font-size: 200%;
+}
+
+.checkers {
+  font-size: 135%;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+/*End page 5*/
+
+/*Start Results page*/
+
+#spicer {
+  background: url("../img/spice.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  border: none;
+  display: block;
+  margin: auto;
+}
+
+#buddy {
+  background: url("../img/buddy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  border: none;
+  display: block;
+  margin: auto;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#temporary {
+  margin-top: 5%;
+  width: inherit;
+}
+
+#intro {
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: 1px 1px 1px;
+  font-size: 190%;
+}
+
+#results {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hero {
+  /*display: none;*/
+  margin: 20px;
+}
+
+#jamie {
+  width: 65%;
+  display:block;
+  margin: auto;
+}
+
+#jane {
+  width: 65%;
+  display:block;
+  margin: auto;
+}
+
+#angelina {
+  width: 65%;
+  display:block;
+  margin: auto;
+}
+
+#mother {
+  width: 65%;
+  display:block;
+  margin: auto;
+}
+
+#loser {
+  width: 65%;
+  display:block;
+  margin: auto;
+}
+
+/*End results page*/
