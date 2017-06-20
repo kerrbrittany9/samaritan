@@ -1,34 +1,89 @@
+
+body {
+  background-image: url(../img/cork.jpg);
+  background-size: 40%;
+}
+
+.jumbotron {
+text-align: center;
+background: linear-gradient( rgba(0, 0, 0, .30), rgba(0, 0, 0, .30) ), url("../img/jumboback.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: white;
+text-shadow: 2px 2px 2px;
+}
+
+.tack {
+  width: 5%;
+  height: 5%;
+}
+
+#tack2 {
+  float:right;
+}
+
+#header {
+  background:url("../img/spice.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 400px;
+  height: 400px;
+  color: white;
+}
+button {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+#temporary {
+  margin-top: 5%;
+  width: inherit;
+}
+#intro {
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: 1px 1px 1px;
+  font-size: 190%;
+}
+
+
 #results {
   padding-left: 40px;
   padding-right: 40px;
 }
 
+.well {
+  display: none;
+  margin: 20px;
+}
+
 #jamie {
   width: 65%;
-  display:block;
+  /*display:block;*/
   margin: auto;
 }
 
 #jane {
   width: 65%;
-  display:block;
+  /*display:block;*/
   margin: auto;
 }
 
 #angelina {
   width: 65%;
-  display:block;
+  /*display:block;*/
   margin: auto;
 }
 
 #mother {
   width: 65%;
-  display:block;
+  /*display:block;*/
   margin: auto;
 }
 
 #loser {
   width: 65%;
-  display:block;
+  /*display:block;*/
   margin: auto;
 }
