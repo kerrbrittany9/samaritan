@@ -37,6 +37,11 @@ text-shadow: 2px 2px 2px;
   background-size: 1200px 400px;
   height: 400px;
   color: white;
+  cursor: auto;
+}
+
+.well {
+  cursor: url("../img/feather.png"), auto;
 }
 
 #intro {
