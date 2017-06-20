@@ -8,11 +8,17 @@ function Survey(name, deed, goodness, altruisms, acts, gifts, times) {
   this.gifts = gifts;
   this.times = times;
   this.score;
+  this.total;
 }
 
 Survey.prototype.calc = function() {
   this.score = Math.max(this.altruisms.length, this.acts.length, this.gifts.length, this.time.length);
   return this.score;
+}
+
+Survey.prototype.total = function() {
+  this.total = this.altruisms + this.acts + this.gifts + this.times;
+  return this.total;
 }
 
 $(document).ready(function() {
@@ -36,7 +42,7 @@ $(document).ready(function() {
     name = $("#name").val();
     deed = $("#goodDeed").val();
     goodness = $("#howGood").val();
-    greeting = "Welcome, " + name + "!" + " it's time to find out if you're a good person.";
+    greeting = "Welcome, " + name + "!" + " It's time to find out if you're a good person.";
     $("#nameResponse").prepend(greeting);
     $("#start").hide();
     $("#hidden").fadeIn(3000);
