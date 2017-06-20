@@ -81,13 +81,21 @@ $(document).ready(function() {
 // page4
   $("form#gifts").submit(function(event){
     event.preventDefault();
+    var cans = $("input:radio[name=cans]:checked").val();
+    var goodwill = $("input:radio[name=items]:checked").val();
     gifts = []
+    donations = []
+    donations.push(cans, goodwill)
+    for (i = 1; i <= donations.length; i += 1) {
+      if (donations[i] === "yes") {
+        donations.push(donations[i]);
+      }
+    };
     $("input:checkbox[name=gifts]:checked").each(function(){
       var gift = $(this).val();
       gifts.push(gift);
     });
-    var inputtedCans = $("input:radio[name=cans]:checked").val();
-    var inputtedGoodwill = $("input:radio[name=items]:checked").val();
+
   });
 
   // page5
