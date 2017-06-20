@@ -15,7 +15,9 @@ text-shadow: 2px 2px 2px;
 }
 
 #diana {
+  background-image: linear-gradient( rgba(255, 0, 0, .30), rgba(255, 0, 0, .30) ), url("../img/diana.jpg");
   width: 70%;
+  height: 545px;
   display:block;
   margin: auto;
   border: double 5px;

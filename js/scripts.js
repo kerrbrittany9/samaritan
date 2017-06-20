@@ -12,9 +12,8 @@ $(document).ready(function() {
     var description = $("#goodDeed").val();
     var goodness = $("#howGood").val();
     var greeting = "Welcome, " + name + "!" + " it's time to find out if you're a good person.";
-    $("#nameResponse").prepend(greeting).fadeIn(4000);
-    $("#start").fadeOut("slow");
-    $("#quiz-start").fadeIn(4000);
-
+    $("#nameResponse").prepend(greeting);
+    $("#start").hide();
+    $("#hidden").fadeIn(3000);
   });
 });

@@ -26,6 +26,11 @@ body{
   cursor: pointer;
 }
 
+#questions {
+  text-align: center;
+  height: 275px;
+}
+
 #goodDeedField {
   height: 200px;
   width: 350px;
@@ -33,7 +38,7 @@ body{
 
 .button{
   display: block;
-  margin-left: 40%;
+  margin: auto;
   margin-top: 5%;
 }
 
@@ -44,12 +49,18 @@ body{
 }
 
 #nameResponse{
-  padding-left: 20%;
+  /*padding-left: 20%;*/
+  font-size: 20px;
 }
 
 #quiz-start {
-  display: none;
   color: blue;
   text-align: center;
+}
 
+#hidden {
+  display: none;
+  text-align: center;
+  height: 275px;
+  margin-top: 10%;
 }
