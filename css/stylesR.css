@@ -23,13 +23,26 @@ text-shadow: 2px 2px 2px;
   float:right;
 }
 
-#header {
-  background:url("../img/spice.jpg");
+#spicer {
+  background: url("../img/spice.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px 400px;
-  height: 400px;
-  color: white;
+  background-size: cover;
+  height: 650px;
+  border: none;
+  display: block;
+  margin: auto;
 }
+
+#buddy {
+  background: url("../img/buddy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  border: none;
+  display: block;
+  margin: auto;
+}
+
 button {
   display: block;
   margin: auto;
@@ -47,13 +60,12 @@ button {
   font-size: 190%;
 }
 
-
 #results {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.well {
+.hero {
   display: none;
   margin: 20px;
 }

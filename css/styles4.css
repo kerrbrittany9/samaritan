@@ -27,9 +27,6 @@ text-shadow: 2px 2px 2px;
   float:right;
 }
 
-#gifts {
-  margin-left: 30%;
-}
 
 #heart {
   background: linear-gradient( rgba(0, 0, 0, .30), rgba(0, 0, 0, .30) ), url("../img/giverheart.jpg");
@@ -37,15 +34,10 @@ text-shadow: 2px 2px 2px;
   background-size: 1200px 400px;
   height: 400px;
   color: white;
-  cursor: auto;
-}
-
-.well {
-  cursor: url("../img/feather.png"), auto;
 }
 
 #intro {
-margin-top: 23%;
+  margin-top: 23%;
 }
 
 button{
@@ -53,8 +45,8 @@ button{
   margin: auto;
 }
 #tree {
+  display: block;
   width: 95%
-  height: 300px;
 }
 
 figcaption {
