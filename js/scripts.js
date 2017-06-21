@@ -145,7 +145,10 @@ $(document).ready(function() {
     $("#spicer").hide();
     $("#temporary").hide();
     $("#buddy").show();
-    if (total === "jamie") {
+    if (score <= 10) {
+      $("#lost").fadeIn();
+    } else {
+      if(total === "jamie") {
       $("#jamieFoxx").fadeIn();
     } else if (total === "jane") {
       $("#jane").fadeIn();
@@ -153,6 +156,7 @@ $(document).ready(function() {
       $("#angie").fadeIn();
     } else if (total === "mother") {
       $("#mother").fadeIn();
+      }
     };
     $(".grand-total").append(score + " / 48 ");
   });
