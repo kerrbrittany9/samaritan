@@ -4,14 +4,14 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles4.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts4.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Gifts</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Are you a Good Person?</h1>
+    </div>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Are you a Good Person?</h1>
-      </div>
       <div class="well"  id="heart">
         <img src="img/tack.png" alt="thumbtack" class="tack"/>
         <img src="img/tack.png" alt="thumbtack" class="tack" id="tack2"/>
@@ -20,27 +20,50 @@
       <div class="well">
         <img src="img/tack.png" alt="thumbtack" class="tack"/>
         <img src="img/tack.png" alt="thumbtack" class="tack" id="tack3"/>
-        <form class="gifts">
+        <form id="gifts">
           <div class="form-group">
             <div class="row">
               <div class="col-md-6">
                  <h3>Over the past year....</h3>
-                 <div class="form-group">
-                   <label for="cans">How many cans of food have you donated?</label>
-                   <input type="number" class="form-control" id="can">
-                 </div><br>
-                 <div class="form-group">
-                   <label for="goodwill">How many times did you drop off items at Goodwill or the like?</label>
-                   <input type="number" class="form-control" id="goodwill">
-                 </div><br>
+                 <div class="radio" class="form-group">
+                   <label>
+                     <h4>Have you donated food items to individuals in need?</h4>
+                     <input type="radio" name="can" value="yes" checked>
+                     yes
+                   </label>
+                 </div>
+                 <div class="radio">
+                   <label>
+                     <input type="radio" name="can" value=>
+                     no
+                   </label>
+                 </div>
+                 <div class="radio" class="form-group">
+                   <label>
+                     <h4>Have you donated clothing, household items, furniture or the like?</h4>
+                     <input type="radio" name="items" value="yes" checked>
+                     yes
+                   </label>
+                 </div>
+                 <div class="radio">
+                   <label>
+                     <input type="radio" name="items" value=>
+                     no
+                   </label>
+                 </div>
                  <div class="checkers">
                    <h4>Check any that apply for the last year:</h4>
                    <input type="checkbox" name="gifts" value="1"> I donated books.<br>
                    <input type="checkbox" name="gifts" value="1"> I donated pet food to an animal shelter.<br>
                    <input type="checkbox" name="gifts" value="1"> I gave money to a charity.<br>
-                   <input type="checkbox" name="gifts" value="1"> I donated blood. <br>
+                   <input type="checkbox" name="gifts" value="1"> I donated blood.<br>
                    <input type="checkbox" name="gifts" value="1"> I gave money or items to the homeless.<br>
                    <input type="checkbox" name="gifts" value="1"> I gave to Toys for Tots.<br><br>
+                   <input type="checkbox" name="gifts" value="1"> I tithed.<br>
+                   <input type="checkbox" name="gifts" value="1"> I collected Box
+                   Tops to donate to local schools.<br>
+                   <input type="checkbox" name="gifts" value="1"> I donated my old phone to a shelter or women's shelter.<br><br>
+                   <input type="checkbox" name="gifts" value="1"> I helped resettle a refugee and/or volunteered at IRCO.<br><br>
                  </div>
                  <a href="page5.html"><button type="submit">Next page</button></a>
                </div>
