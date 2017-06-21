@@ -42,7 +42,22 @@ $(document).ready(function() {
   $("#fransatan").click(function(){
     $("#satan").toggle();
     $("#francis").toggle();
-  })
+  });
+
+  $("#wheelie").hover(function(){
+    $("#umbrella").toggle();
+    $("#noUmbrella").toggle();
+  });
+
+  $("#deeds").hover(function(){
+    $("#good").toggle();
+    $("#bad").toggle();
+  });
+
+  $("#redhead").hover(function(){
+    $("#girl").toggle();
+    $("#boy").toggle();
+  });
 
   $("#start").submit(function(event) {
     event.preventDefault()
@@ -53,10 +68,12 @@ $(document).ready(function() {
     $("#nameResponse").prepend(greeting);
     $("#start").hide();
     $("#hidden").fadeIn(3000);
-    $(".mainPage").hide();
-    $("#page2").fadeIn();
     console.log(name, deed, goodness);
   });
+  $("#quiz-start").click(function(){
+    $(".mainPage").hide();
+    $("#page2").fadeIn();
+  })
 // page2
   $("#page2responses").submit(function(event) {
     event.preventDefault()
@@ -85,6 +102,11 @@ $(document).ready(function() {
     $("#page3").fadeIn();
   });
 
+  $("#localPrevious").click(function(){
+    $("#page2").hide();
+    $(".mainPage").fadeIn();
+  });
+
   // page3
   $(".acts").submit(function(event){
     event.preventDefault();
@@ -97,6 +119,12 @@ $(document).ready(function() {
     $("#page3").hide();
     $("#page4").fadeIn();
   });
+
+  $("#actsPrevious").click(function(){
+    $("#page3").hide();
+    $("#page2").fadeIn();
+  })
+
 // page4
   $(".gifts").submit(function(event){
     event.preventDefault();
@@ -119,6 +147,11 @@ $(document).ready(function() {
     console.log(gifts);
   });
 
+  $("#donorPrevious").click(function(){
+    $("#page4").hide();
+    $("#page3").fadeIn();
+  });
+
   // page5
   $(".time").submit(function(event) {
     event.preventDefault();
@@ -137,6 +170,11 @@ $(document).ready(function() {
 
   });
 
+  $("#servicePrevious").click(function(){
+    $("#page5").hide();
+    $("#page4").fadeIn();
+  });
+
   $("#results").click(function(){
     var newSurvey = new Survey(name, deed, goodness, altruisms, acts, gifts, times)
     var total = newSurvey.calc();
@@ -153,6 +191,11 @@ $(document).ready(function() {
     } else if (total === "mother") {
       $("#mother").fadeIn();
     };
+  });
+
+  $("#goHome").click(function(){
+    $("#resultsPage").hide();
+    $(".mainPage").fadeIn();
   });
 
 });
