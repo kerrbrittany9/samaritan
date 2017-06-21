@@ -23,7 +23,7 @@ Survey.prototype.calc = function() {
   return this.total;
 };
 
-Survey.prototype.total = function() {
+Survey.prototype.grand = function() {
   this.score = this.altruisms.length + this.acts.length + this.gifts.length + this.times.length;
   return this.score;
 };
@@ -178,11 +178,15 @@ $(document).ready(function() {
   $("#results").click(function(){
     var newSurvey = new Survey(name, deed, goodness, altruisms, acts, gifts, times)
     var total = newSurvey.calc();
+    var score = newSurvey.grand();
     console.log(newSurvey)
     $("#spicer").hide();
     $("#temporary").hide();
     $("#buddy").show();
-    if (total === "jamie") {
+    if (score <= 10) {
+      $("#lost").fadeIn();
+    } else {
+      if(total === "jamie") {
       $("#jamieFoxx").fadeIn();
     } else if (total === "jane") {
       $("#jane").fadeIn();
@@ -190,7 +194,9 @@ $(document).ready(function() {
       $("#angie").fadeIn();
     } else if (total === "mother") {
       $("#mother").fadeIn();
+      }
     };
+    $(".grand-total").append(score + " / 48 ");
   });
 
   $("#goHome").click(function(){
