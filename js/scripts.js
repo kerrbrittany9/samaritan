@@ -2,7 +2,6 @@ function Survey(name, deed, goodness, altruisms, acts, gifts, times) {
   this.userName = name;
   this.descript = deed;
   this.goodness = goodness;
-  this.rate = rate;
   this.altruisms = altruisms;
   this.acts = acts;
   this.gifts = gifts;
@@ -17,7 +16,7 @@ Survey.prototype.calc = function() {
 }
 
 Survey.prototype.total = function() {
-  this.total = this.altruisms + this.acts + this.gifts + this.times;
+  this.total = this.altruisms.length + this.acts.length + this.gifts.length + this.times.length;
   return this.total;
 }
 
@@ -46,6 +45,8 @@ $(document).ready(function() {
     $("#nameResponse").prepend(greeting);
     $("#start").hide();
     $("#hidden").fadeIn(3000);
+    $(".mainPage").hide();
+    $("#page2").fadeIn();
     console.log(name, deed, goodness);
   });
 // page2
@@ -72,6 +73,8 @@ $(document).ready(function() {
     });
     var score = altruisms.length;
     console.log(score)
+    $("#page2").hide();
+    $("#page3").fadeIn();
   });
 
   // page3
@@ -83,9 +86,11 @@ $(document).ready(function() {
       acts.push(act);
     });
     console.log(acts)
+    $("#page3").hide();
+    $("#page4").fadeIn();
   });
 // page4
-  $("form#gifts").submit(function(event){
+  $(".gifts").submit(function(event){
     event.preventDefault();
     var cans = $("input:radio[name=cans]:checked").val();
     var goodwill = $("input:radio[name=items]:checked").val();
@@ -101,11 +106,12 @@ $(document).ready(function() {
       var gift = $(this).val();
       gifts.push(gift);
     });
-
+    $("#page4").hide();
+    $("#page5").fadeIn();
   });
 
   // page5
-  $("#time").submit(function(event) {
+  $(".time").submit(function(event) {
     event.preventDefault();
     times = [];
     $("input:checkbox[name=time]:checked").each(function() {
@@ -117,10 +123,12 @@ $(document).ready(function() {
   // var total = newSurvey.calc();
   // $("#score").text(total);
 
-  // var newSurvey = new Survey(name, deed, goodness, altruisms, acts, gifts, times)
-  // console.log(newSurvey)
+  var newSurvey = new Survey(name, deed, goodness, altruisms, acts, gifts, times)
+  console.log(newSurvey)
     console.log(name);
-
+    $("#page5").hide();
+    $("#resultsPage").show();
+    $("#textAndStuff").text(newSurvey);
   });
 
 });
