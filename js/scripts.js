@@ -11,13 +11,13 @@ function Survey(name, deed, goodness, altruisms, acts, gifts, times) {
 }
 
 Survey.prototype.calc = function() {
-  if (this.altruisms > this.acts && this.altruisms > this.gifts && this.altruisms > this.times) {
+  if (this.altruisms.length > this.acts.length && this.altruisms.length > this.gifts.length && this.altruisms.length > this.times.length) {
     this.total = "jamie";
-  } else if (this.acts > this.altruisms && this.acts > this.gifts && this.acts > this.times) {
+  } else if (this.acts.length > this.altruisms.length && this.acts.length > this.gifts.length && this.acts.length > this.times.length) {
     this.total = "jane";
-  } else if (this.gifts > this.altruisms && this.gifts > this.acts && this.gifts > this.times) {
+  } else if (this.gifts.length > this.altruisms.length && this.gifts.length > this.acts.length && this.gifts.length > this.times.length) {
     this.total = "angie";
-  } else if (this.times > this.altruisms && this.times > this.acts && this.times > this.gifts) {
+  } else if (this.times.length > this.altruisms.length && this.times.length > this.acts.length && this.times.length > this.gifts.length) {
     this.total = "mother";
   }
   return this.total;
