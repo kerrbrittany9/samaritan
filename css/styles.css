@@ -281,5 +281,10 @@ button {
   display:block;
   margin: auto;
 }
-
+.grand-total {
+  border: solid black 1px;
+  font-size: 50px;
+  background-color: white;
+  padding: 15px;
+}
 /*End results page*/
