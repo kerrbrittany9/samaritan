@@ -219,6 +219,7 @@ button {
   border: none;
   display: block;
   margin: auto;
+  display: none;
 }
 
 button {
@@ -246,8 +247,9 @@ button {
 }
 
 .hero {
-  /*display: none;*/
+  display: none;
   margin: 20px;
+
 }
 
 #jamie {
@@ -256,7 +258,7 @@ button {
   margin: auto;
 }
 
-#jane {
+#janeg {
   width: 65%;
   display:block;
   margin: auto;
@@ -268,7 +270,7 @@ button {
   margin: auto;
 }
 
-#mother {
+#mothert {
   width: 65%;
   display:block;
   margin: auto;

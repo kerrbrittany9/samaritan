@@ -11,14 +11,22 @@ function Survey(name, deed, goodness, altruisms, acts, gifts, times) {
 }
 
 Survey.prototype.calc = function() {
-  this.score = Math.max(this.altruisms.length, this.acts.length, this.gifts.length, this.time.length);
-  return this.score;
-}
+  if (this.altruisms > this.acts && this.altruisms > this.gifts && this.altruisms > this.times) {
+    this.total = "jamie";
+  } else if (this.acts > this.altruisms && this.acts > this.gifts && this.acts > this.times) {
+    this.total = "jane";
+  } else if (this.gifts > this.altruisms && this.gifts > this.acts && this.gifts > this.times) {
+    this.total = "angie";
+  } else if (this.times > this.altruisms && this.times > this.acts && this.times > this.gifts) {
+    this.total = "mother";
+  }
+  return this.total;
+};
 
 Survey.prototype.total = function() {
-  this.total = this.altruisms.length + this.acts.length + this.gifts.length + this.times.length;
-  return this.total;
-}
+  this.score = this.altruisms.length + this.acts.length + this.gifts.length + this.times.length;
+  return this.score;
+};
 
 $(document).ready(function() {
   // var name;
@@ -99,7 +107,7 @@ $(document).ready(function() {
     donations.push(cans, goodwill)
     for (i = 1; i <= donations.length; i += 1) {
       if (donations[i] === "yes") {
-        donations.push(donations[i]);
+        gifts.push(donations[i]);
       }
     };
     $("input:checkbox[name=gifts]:checked").each(function(){
@@ -108,6 +116,7 @@ $(document).ready(function() {
     });
     $("#page4").hide();
     $("#page5").fadeIn();
+    console.log(gifts);
   });
 
   // page5
@@ -119,16 +128,31 @@ $(document).ready(function() {
       times.push(time);
     });
 
-    console.log(times)
-  // var total = newSurvey.calc();
+    console.log(times);
   // $("#score").text(total);
 
-  var newSurvey = new Survey(name, deed, goodness, altruisms, acts, gifts, times)
-  console.log(newSurvey)
-    console.log(name);
+
     $("#page5").hide();
-    $("#resultsPage").show();
-    $("#textAndStuff").text(newSurvey);
+    $("#resultsPage").fadeIn();
+
+  });
+
+  $("#results").click(function(){
+    var newSurvey = new Survey(name, deed, goodness, altruisms, acts, gifts, times)
+    var total = newSurvey.calc();
+    console.log(newSurvey)
+    $("#spicer").hide();
+    $("#temporary").hide();
+    $("#buddy").show();
+    if (total === "jamie") {
+      $("#jamieFoxx").fadeIn();
+    } else if (total === "jane") {
+      $("#jane").fadeIn();
+    } else if (total === "angie") {
+      $("#angie").fadeIn();
+    } else if (total === "mother") {
+      $("#mother").fadeIn();
+    };
   });
 
 });
