@@ -14,6 +14,11 @@ body{
   text-shadow: 2px 2px 2px;
 }
 /*Home Page*/
+#fransatan {
+  background-image: url(../img/cork.jpg);
+  border: none;
+}
+
 #francis{
   display: block;
   margin: auto;
@@ -33,16 +38,22 @@ body{
   height: 275px;
 }
 
-.button{
-  display: block;
+.buttPic {
+  width: 20%;
   margin: auto;
+}
+
+#mainSubmit {
   margin-top: 5%;
+  display: block;
+  margin-left: 40%
+  /*margin: auto;*/
 }
 
 .pics {
   height: 300px;
   width: 95%;
-display: inline-block
+  display: inline-block
 }
 
 #noUmbrella, #bad, #boy {
@@ -50,7 +61,9 @@ display: inline-block
 }
 
 #pictures {
-  height: 340px;;
+  height: 340px;
+  background-image: url(../img/cork.jpg);
+  border: none;
 }
 
 #hidden {
@@ -102,7 +115,7 @@ display: inline-block
 #lemonade {
   width: 80%;
   margin-bottom: 8%;
-  border-radius: 35% 10%;
+  border-radius:  60% 10%;
 }
 
 #tball {
@@ -111,19 +124,20 @@ display: inline-block
   border-radius: 10%
 }
 
-#localNav {
-margin-left: 20%;
-margin-top: 5%
-}
-
 #localSubmit {
-  display: inline-block;;
-  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 80.25px;
+  height: 80.25px;
+  margin-top: 5%;
 }
 
 #localPrevious {
   display: inline-block;
-  font-size: 18px;
+  width: 80.25px;
+  height: 80.25px;
+  margin-left: 25%;
+  margin-top: 5%;
 }
 /*End page 2*/
 
@@ -135,7 +149,6 @@ margin-top: 5%
   height: 400px;
   display: block;
 }
-
 
 #service {
   background: url("../img/service.jpg");
@@ -166,12 +179,11 @@ margin-left: 25%;
 }
 
 #actsSubmit {
-  font-size: 18px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 #actsPrevious {
-  font-size: 18px;
   display: inline-block;
 }
 /*end page 3*/
@@ -213,11 +225,10 @@ figcaption {
 
 #donorSubmit{
   display: inline-block;
-  font-size: 18px;
+  vertical-align: middle;
 }
 
 #donorPrevious {
-  font-size: 18px;
   display: inline-block;
 }
 /*End page 4*/
@@ -260,11 +271,10 @@ figcaption {
 
 #serviceSubmit{
   display: inline-block;
-  font-size: 18px;
+  vertical-align: middle;
 }
 
 #servicePrevious {
-  font-size: 18px;
   display: inline-block;
 }
 
@@ -289,6 +299,10 @@ figcaption {
   display: block;
   margin: auto;
   display: none;
+}
+
+#buddy h4 {
+  text-align: center;
 }
 
 #elf {
@@ -362,11 +376,15 @@ figcaption {
   padding: 15px;
 }
 
-
+#profile {
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+}
 #goHome{
   display: block;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 1%;
 }
 
 #userGoals li:hover {
