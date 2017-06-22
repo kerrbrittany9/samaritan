@@ -348,8 +348,7 @@
             <div class="after"></div>
           </div>
           <img src="img/buddy.jpg" alt="Congrats from Buddy the Elf!" id="elf"/>
-
-          <input class="buttPic" type="image" src="img/profile.png" id="profile"></input>
+          <input class="buttPic" type="image" src="img/profile.png" id="profileButt"></input>
           <h4>or</h4>
           <input class="buttPic" type="image" src="img/home.png" id="goHome"></input>
         </div>
@@ -492,25 +491,29 @@
     </div>
     <div class="newPages" id="profile">
       <div class="container">
-        <div class="well">
+        <div class="well" id="profileWell">
           <img src="img/tack.png" alt="thumbtack" class="tack"/>
           <img src="img/tack.png" alt="thumbtack" class="tack tack2"/>
-          <h3><span id="userName"></span>, here's what you said your good deed was: <span class="goodDeed"></span></h3>
+          <h3><span id="userName"></span>, here's what you said your best good deed was: <span class="goodDeed"></span></h3>
           <h3>But you have done all these great things this past year!</h3>
           <ul id="userChoices">
-
+            <!-- choices appended here -->
           </ul>
           <h3>How do you want to continue your awesome service?!</h3>
           <form id="profile-goals">
             <div class="to-do">
-              <label for="to-do-list">Write out your samaritan goals for the next year.</label>
+              <label for="to-do-list" id="yourGoals">Write out your samaritan goals for the next year.</label>
               <input type="text" id="to-do" name="to-do-list" placeholder="Good Stuff Here">
-              <button type="submit" name="makesAList" id="list">Your Goals!</button>
+              <input type="image" src="img/add.png" id="list"></input>
               <ul id="userGoals">
-
+                <!-- goals appended here -->
               </ul>
             </div>
           </form>
+          <div id="lastButts">
+            <img class="buttPic"src="img/home.png"  id="home2"/>
+            <img class="buttPic" src="img/score.png" id="score"/>
+          </div>
         </div>
       </div>
     </div>

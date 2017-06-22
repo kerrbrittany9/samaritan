@@ -230,7 +230,7 @@ $(document).ready(function() {
     $(".mainPage").fadeIn();
   });
 
-  $("#goProfile").click(function(){
+  $("#profileButt").click(function(){
     var deed;
     deed = $("#goodDeed").val();
     $("#userName").text(name);
@@ -247,6 +247,16 @@ $(document).ready(function() {
       $(this).fadeOut();
     });
     });
+  });
+
+  $("#home2").click(function(){
+    $("#profile").hide();
+    $(".mainPage").fadeIn();
+  });
+
+  $("#score").click(function(){
+    $("#profile").hide();
+    $("#resultsPage").fadeIn();
   });
 
 });

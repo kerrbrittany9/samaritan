@@ -376,10 +376,14 @@ figcaption {
   padding: 15px;
 }
 
-#profile {
+#profileButt {
   display: block;
   margin: auto;
   margin-top: 3%;
+}
+
+#profile {
+  display: none;
 }
 #goHome{
   display: block;
@@ -387,8 +391,29 @@ figcaption {
   margin-top: 1%;
 }
 
+#list{
+  width: 15%;
+  vertical-align: middle;
+}
+
+#home2:hover {
+  cursor: pointer;
+}
+
+#score:hover {
+  cursor: pointer;
+}
+#yourGoals {
+  font-size: 22px;
+}
+
 #userGoals li:hover {
     cursor: pointer;
+}
+
+#lastButts {
+text-align: center;
+margin-top: 8%;
 }
 
 .pyro > .before, .pyro > .after {
