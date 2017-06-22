@@ -50,6 +50,14 @@ var displayArray = function(result) {
   return;
 };
 
+// function ToDoList (item){
+// this.item = item;
+// }
+//
+// ToDoList.prototype.makeList = function() {
+//   return this.item;
+// }
+
 $(document).ready(function() {
   // var name;
   // var deed;
@@ -237,16 +245,20 @@ $(document).ready(function() {
     $(".goodDeed").text(deed);
     $("#resultsPage").hide();
     $("#profile").fadeIn();
+  });
+
   $("#profile-goals").submit(function(event) {
-      event.preventDefault()
-      toDoList = $("#to-do").val();
-      $("#userGoals").append("<li class='list'>" + toDoList + "</li>");
-      $("input#to-do").val("");
-      $(".list").click(function() {
-      $("#userChoices").append("<li>" + toDoList + "</li>");
-      $(this).fadeOut();
-    });
-    });
+    event.preventDefault();
+    toDoList = $("#to-do").val();
+    // newToDoList = new ToDoList(toDoList);
+    $("#userGoals").append("<li class='list'>" + toDoList + "</li>");
+    $("input#to-do").val("");
+
+  $(".list").last().click(function() {
+    $("#userChoices").append($(this));
+    // $(this).fadeOut();
+    console.log();
+  });
   });
 
   $("#home2").click(function(){
@@ -258,5 +270,4 @@ $(document).ready(function() {
     $("#profile").hide();
     $("#resultsPage").fadeIn();
   });
-
 });
