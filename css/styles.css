@@ -387,6 +387,10 @@ figcaption {
   margin-top: 1%;
 }
 
+#userGoals li:hover {
+    cursor: pointer;
+}
+
 .pyro > .before, .pyro > .after {
   position: absolute;
   width: 5px;
