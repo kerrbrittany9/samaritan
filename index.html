@@ -39,7 +39,7 @@
                   <label for="howGood">On a scale of 1-10, how good a person do you consider yourself to be?</label>
                   <input id="howGood" type="number" name="" placeholder="1-10">
                 </div>
-                <button type="submit" class="button">Submit</button>
+                <input src="img/submit.png" type="image" class="buttPic" id="mainSubmit"></input>
               </form>
               <div id="hidden">
                 <span id="nameResponse"></span>
@@ -161,8 +161,8 @@
                   <input type="checkbox" name="altruism" value="hosted a clothing drive">  Host a clothing drive<br>
                 </div>
                 <div id="localNav">
-                  <button type="button" name="previous" id="localPrevious">Last page</button>
-                  <button type="submit" name="next" id="localSubmit">Next Page</button>
+                  <img class="buttPic" id="localPrevious" src="img/back.png">
+                  <input class="buttPic" type="image" id="localSubmit" src="img/next.png"></input>
               </div>
               </div>
             </form>
@@ -206,8 +206,8 @@
                      <input class="actChecks" type="checkbox" name="acts" value="adopted from animal shelter"> Adopt an animal from a shelter<br><br>
                    </div>
                    <div class="actsNav">
-                     <button type="button" name="previous" id="actsPrevious">Last page</button>
-                     <button type="submit" id="actsSubmit">Next page</button>
+                     <img class="buttPic" src="img/back.png" id="actsPrevious">
+                     <input class="buttPic" type="image" src="img/next.png" id="actsSubmit"></input>
                    </div>
                  </div>
                  <div class="col-md-6">
@@ -278,8 +278,8 @@
                     <input type="checkbox" name="gifts" value="resettled refugees"> I helped resettle a refugee and/or volunteered at IRCO.<br>
                   </div>
                   <div class="donorNav">
-                    <button type="button" name="previous" id="donorPrevious">Last page</button>
-                    <button id="donorSubmit" type="submit">Next page</button>
+                    <img class="buttPic" src="img/back.png" id="donorPrevious">
+                    <input class="buttPic" type="image" src="img/next.png" id="donorSubmit"></input>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -324,8 +324,8 @@
                     <input type="checkbox" name="time" value="taught ESL"> I taught English as a Second Language or assisted refugees.<br>
                   </div>
                   <div class="serviceNav">
-                    <button type="button" name="previous" id="servicePrevious">Last page</button>
-                    <button id="serviceSubmit" type="submit">Next page</button>
+                    <img class="buttPic" src="img/back.png" id="servicePrevious"></input>
+                    <input class="buttPic" type="image" src="img/next.png" id="serviceSubmit" ></input>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -348,14 +348,16 @@
             <div class="after"></div>
           </div>
           <img src="img/buddy.jpg" alt="Congrats from Buddy the Elf!" id="elf"/>
-          <button type="button" name="homePage" id="goHome">Home</button>
-          <button type="button" name="profilePage" id="goProfile">See your profile!</button>
+
+          <input class="buttPic" type="image" src="img/profile.png" id="profile"></input>
+          <h4>or</h4>
+          <input class="buttPic" type="image" src="img/home.png" id="goHome"></input>
         </div>
         <div class="panel panel-default" id="temporary">
           <img src="img/tack.png" alt="thumbtack" class="tack"/>
           <img src="img/tack.png" alt="thumbtack" class="tack tack2"/>
           <h3 id="intro">Wow! You answered a lot of questions.<br>Let's take a look at what they mean about you.</h3>
-          <button type="button" name="button" id="results">Get Results!</button>
+          <input class="buttPic" type="image" src="img/results.png" id="results"></input>
         </div>
         <div class="well hero" id="jamieFoxx">
           <img src="img/tack.png" alt="thumbtack" class="tack"/>
