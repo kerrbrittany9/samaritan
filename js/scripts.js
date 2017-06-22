@@ -67,7 +67,7 @@ $(document).ready(function() {
     greeting = "Welcome, " + name + "!" + " It's time to find out if you're a good person.";
     $("#nameResponse").prepend(greeting);
     $("#start").hide();
-    $("#hidden").fadeIn(3000);
+    $("#hidden").fadeIn(1500);
     console.log(name, deed, goodness);
   });
   $("#quiz-start").click(function(){
