@@ -86,7 +86,7 @@ $(document).ready(function() {
     altruisms = []
     answers.push(petition, lemonade, litter, bully, seat)
     for (i = 1; i <= answers.length; i += 1) {
-      if (answers[i] === "yes") {
+      if (answers[i] !== "no") {
         altruisms.push(answers[i]);
       }
     };
@@ -134,7 +134,7 @@ $(document).ready(function() {
     donations = []
     donations.push(cans, goodwill)
     for (i = 1; i <= donations.length; i += 1) {
-      if (donations[i] === "yes") {
+      if (donations[i] !== "no") {
         gifts.push(donations[i]);
       }
     };
