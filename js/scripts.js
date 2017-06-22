@@ -8,6 +8,7 @@ function Survey(name, deed, goodness, altruisms, acts, gifts, times) {
   this.times = times;
   this.score;
   this.total;
+  this.choices = [];
 }
 
 Survey.prototype.calc = function() {
@@ -19,6 +20,14 @@ Survey.prototype.calc = function() {
     this.total = "angie";
   } else if (this.times.length > this.altruisms.length && this.times.length > this.acts.length && this.times.length > this.gifts.length) {
     this.total = "mother";
+  } else if (this.altruisms.length === this.acts.length || this.altruisms.length === this.gifts.length || this.altruisms.length === this.times.length) {
+    this.total = "jamie";
+  } else if (this.acts.length === this.altruisms.length || this.acts.length === this.gifts.length || this.acts.length === this.times.length) {
+    this.total = "jane";
+  } else if (this.gifts.length === this.altruisms.length || this.gifts.length === this.acts.length || this.gifts.length === this.times.length) {
+    this.total = "angie";
+  } else if (this.times.length === this.altruisms.length || this.times.length === this.acts.length || this.times.length === this.gifts.length) {
+    this.total = "mother";
   }
   return this.total;
 };
@@ -28,9 +37,22 @@ Survey.prototype.grand = function() {
   return this.score;
 };
 
+Survey.prototype.joinArrays = function() {
+  this.choices = this.altruisms.concat(this.acts, this.gifts, this.times);
+  return this.choices;
+};
+
+var displayArray = function(result) {
+  $("#userChoices").empty();
+  result.forEach(function(index) {
+    $("#userChoices").append("<li>" + index + "</li>")
+  });
+  return;
+};
+
 $(document).ready(function() {
   // var name;
-  var deed;
+  // var deed;
   var goodness;
   var greeting;
   var altruisms;
@@ -85,7 +107,7 @@ $(document).ready(function() {
     answers = []
     altruisms = []
     answers.push(petition, lemonade, litter, bully, seat)
-    for (i = 1; i <= answers.length; i += 1) {
+    for (i = 0; i < answers.length; i += 1) {
       if (answers[i] !== "no") {
         altruisms.push(answers[i]);
       }
@@ -133,7 +155,7 @@ $(document).ready(function() {
     gifts = []
     donations = []
     donations.push(cans, goodwill)
-    for (i = 1; i <= donations.length; i += 1) {
+    for (i = 0; i < donations.length; i += 1) {
       if (donations[i] !== "no") {
         gifts.push(donations[i]);
       }
@@ -197,11 +219,34 @@ $(document).ready(function() {
       }
     };
     $(".grand-total").append(score + " / 48 ");
+    var allChoices = newSurvey.joinArrays();
+    displayArray(allChoices);
+
+    console.log(allChoices);
   });
 
   $("#goHome").click(function(){
     $("#resultsPage").hide();
     $(".mainPage").fadeIn();
+  });
+
+  $("#goProfile").click(function(){
+    var deed;
+    deed = $("#goodDeed").val();
+    $("#userName").text(name);
+    $(".goodDeed").text(deed);
+    $("#resultsPage").hide();
+    $("#profile").fadeIn();
+  $("#profile-goals").submit(function(event) {
+      event.preventDefault()
+      toDoList = $("#to-do").val();
+      $("#userGoals").append("<li class='list'>" + toDoList + "</li>");
+      $("input#to-do").val("");
+      $(".list").click(function() {
+      $("#userChoices").append("<li>" + toDoList + "</li>");
+      $(this).fadeOut();
+    });
+    });
   });
 
 });

@@ -349,6 +349,7 @@
           </div>
           <img src="img/buddy.jpg" alt="Congrats from Buddy the Elf!" id="elf"/>
           <button type="button" name="homePage" id="goHome">Home</button>
+          <button type="button" name="profilePage" id="goProfile">See your profile!</button>
         </div>
         <div class="panel panel-default" id="temporary">
           <img src="img/tack.png" alt="thumbtack" class="tack"/>
@@ -484,6 +485,30 @@
               <img src="img/evil.jpg" alt="Dr. Evil" id="loser">
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="newPages" id="profile">
+      <div class="container">
+        <div class="well">
+          <img src="img/tack.png" alt="thumbtack" class="tack"/>
+          <img src="img/tack.png" alt="thumbtack" class="tack tack2"/>
+          <h3><span id="userName"></span>, here's what you said your good deed was: <span class="goodDeed"></span></h3>
+          <h3>But you have done all these great things this past year!</h3>
+          <ul id="userChoices">
+
+          </ul>
+          <h3>How do you want to continue your awesome service?!</h3>
+          <form id="profile-goals">
+            <div class="to-do">
+              <label for="to-do-list">Write out your samaritan goals for the next year.</label>
+              <input type="text" id="to-do" name="to-do-list" placeholder="Good Stuff Here">
+              <button type="submit" name="makesAList" id="list">Your Goals!</button>
+              <ul id="userGoals">
+
+              </ul>
+            </div>
+          </form>
         </div>
       </div>
     </div>
