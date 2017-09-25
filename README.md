@@ -12,6 +12,19 @@ This web application allows users to take a survey about their community service
 
 Sign into GitHub and copy URL. In local terminal, type command "git clone [paste URL here]" To open this application in atom from local terminal, type "atom . " To open in browser, type "open index.html" into terminal.
 
+## Preview
+
+![Home Page Preview](img/home2.png)
+_Welcome Page requires an input to start and personalize the quiz._
+
+![Forms](img/questions.png)
+_Users answer questions on four different forms. Checking boxes of activities they have engaged in over the past year._
+
+![Questions](img/questions2.png)
+_The forms are divided between areas of local and global good and that which is environment, humanitarian or animal focused._
+
+![Results](img/results2.png)
+_Users' scores land them on one of five result pages: Jane Goodall, Jaimie Foxx, Angelina Jolie, Mother Teresa or Dr Evil. Links to local organizations in the area of their good samaritan interests are provided on the page._
 
 ## Specifications
 
